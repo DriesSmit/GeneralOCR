@@ -21,8 +21,6 @@ def findOrient(image,angleRange = 5,skipStep = 10):
     imageRows, imageCols = image.shape
     accuracy = 0.1
 
-
-
     for i in range(-1, angleRange*2*int(1/accuracy)):
         #rot = i
         rot = (round(i / 2 - 0.4) + 1) * ((-1) * (i % 2) + ((i + 1) % 2)) * 0.1
