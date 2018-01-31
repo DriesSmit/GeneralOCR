@@ -5,9 +5,10 @@ args = []
 
 ir = imageReader(args)
 
-images, allLabels = ir.generateImage(numImages=10,numCharacters=1)
+images, allLabels = ir.generateImage(numImages=10,numCharacters=20)
 font = cv2.FONT_HERSHEY_PLAIN
 fondSize = 10
+
 for i in range(len(images)):
     image = images[i]
     for label in allLabels[i]:
